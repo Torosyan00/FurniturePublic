@@ -1,0 +1,89 @@
+.collection {
+    padding: 60px 0px 60px 0px;
+    &__container {
+    }
+
+    &__body {
+        padding: 0px 57px 0px 27px;
+        display: flex;
+        gap: 40px;
+    }
+
+    &__item {
+        position: relative;
+        cursor: pointer;
+
+        &:hover {
+            &:first-child {
+                transform: scale(1.1);
+                &::before {
+                    opacity: 0;
+                    transform: translateX(-100%);
+                }
+            }
+            &:last-child {
+                transform: scale(1.1);
+                &::before {
+                    opacity: 0;
+                    transform: translateX(100%);
+                }
+            }
+            &:nth-child(2) {
+                transform: scale(1.1);
+                &::before {
+                    opacity: 0;
+                    transform: translateY(-100%);
+                }
+            }
+        }
+        &:nth-child(2) {
+            transition: all 0.3s ease;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 434px;
+                background-color: $primary;
+                opacity: 0.3;
+                transition: all 0.7s ease;
+            }
+        }
+        &:last-child {
+            transition: all 0.3s ease;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 434px;
+                background-color: $primary;
+                opacity: 0.3;
+                top: 38px;
+                border-bottom-right-radius: 70px;
+                transition: all 0.7s ease;
+            }
+        }
+        &:first-child {
+            transition: all 0.3s ease;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 434px;
+                background-color: $primary;
+                opacity: 0.3;
+                top: 38px;
+                border-top-left-radius: 70px;
+                transition: all 0.7s ease;
+            }
+        }
+
+        &_1 {
+            border-top-left-radius: 70px;
+            margin: 38px 0px 0px 0px;
+        }
+        &_3 {
+            border-bottom-right-radius: 70px;
+            margin: 38px 0px 0px 0px;
+        }
+    }
+}

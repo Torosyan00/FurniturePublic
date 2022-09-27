@@ -1,0 +1,55 @@
+.beautify {
+    padding: 60px 112px 60px 40px;
+    &__container {
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+    }
+
+    &__content {
+        max-width: 514px;
+        margin: 0px 62px 0px 0px;
+        flex: 1 1 50%;
+    }
+
+    &__title {
+        text-align: left;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 39px;
+
+        color: #666666;
+
+        margin: 0px 0px 30px 0px;
+    }
+
+    &__button {
+        padding: 24px 57px;
+    }
+
+    &__image {
+        position: relative;
+        flex: 1 1 50%;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 373px;
+            height: 373px;
+            background-color: #09513b;
+            border-radius: 50%;
+            top: 50%;
+            left: 196px;
+            transform: translateY(-50%);
+            z-index: -1;
+        }
+        & img {
+            border-radius: 60px 10px 60px 10px;
+        }
+    }
+}

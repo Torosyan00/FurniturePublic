@@ -1,0 +1,103 @@
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+/*Fonts*/
+
+/*Colors*/
+
+$primary: #054c73;
+$text-color: #333333;
+
+/*Colors*/
+body {
+    margin: 0;
+    height: 100%;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px;
+
+    color: $text-color;
+}
+body._lock {
+    overflow: hidden;
+}
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+/*Container*/
+[class*="__container"] {
+    max-width: 1260px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+/*Container*/
+
+/*btn*/
+.button {
+    position: relative;
+    display: inline-block;
+    padding: 25px 72px;
+    background: $primary;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    transition: all 0.3s ease 0s;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        border: 3px solid $primary;
+        border-radius: 50px;
+
+        transform: scale(0);
+        transition: all 0.3s ease 0s;
+    }
+    &:hover {
+        background: transparent;
+        color: $primary;
+        &::before {
+            transform: scale(1);
+        }
+    }
+}
+
+/*btn*/
+
+/*title*/
+
+.title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #666666;
+    margin: 0px 0px 50px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+/*title*/

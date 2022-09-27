@@ -1,0 +1,80 @@
+.join {
+    padding: 60px 0px 60px 0px;
+    background-color: #f2f5ff;
+    &__container {
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 39px;
+        /* or 195% */
+
+        text-align: center;
+
+        /* Font / Color1 */
+
+        color: #666666;
+
+        margin: 0px 0px 50px 0px;
+    }
+    &__form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__email {
+        border: 1px solid $primary;
+        padding: 27px 0px 26px 25px;
+        max-width: 333px;
+        font-size: 16px;
+        color: #011c42;
+
+        border-radius: 3px 0px 0px 3px;
+        &::placeholder {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            /* identical to box height */
+
+            color: #011c42;
+
+            opacity: 0.5;
+        }
+    }
+
+    &__btn {
+        position: relative;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+
+        color: #ffffff;
+        background-color: $primary;
+        border-radius: 0px 3px 3px 0px;
+
+        padding: 27px 45px;
+
+        transition: all 0.3s ease 0s;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            border: 2px solid $primary;
+
+            transform: scale(0);
+            transition: all 0.3s ease 0s;
+        }
+        &:hover {
+            background: transparent;
+            color: $primary;
+            &::before {
+                transform: scale(1);
+            }
+        }
+    }
+}

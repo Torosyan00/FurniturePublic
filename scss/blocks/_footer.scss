@@ -1,0 +1,67 @@
+.footer {
+    padding: 49px 0px 89px 0px;
+    background-color: $primary;
+    color: #fff;
+
+    &__container {
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+    }
+
+    &__content {
+        margin: 0px 23px 0px 0px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+
+        margin: 0px 0px 34px 0px;
+    }
+
+    &__text {
+        max-width: 400px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 35px;
+
+        margin: 0px 0px 21px 0px;
+    }
+
+    &__follow {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    &__instashop {
+    }
+
+    &__shoptitle {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+
+        margin: 0px 0px 23px 0px;
+    }
+
+    &__items {
+        display: flex;
+        gap: 21px;
+    }
+
+    &__item {
+        border-radius: 2px;
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover {
+            transform: scale(1.1);
+            border-radius: 10px 5px 10px 5px;
+        }
+    }
+}

@@ -1,0 +1,88 @@
+.advantage {
+    padding: 46px 0px 49px 30px;
+    background-color: #f2f5ff;
+    &__container {
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        transition: all 0.3s ease 0s;
+        &:hover {
+            transform: scale(1.1);
+            & .icon__lines {
+                transition: all 0.7s ease 0s;
+                transform: translateX(-10px) scale(1.2);
+            }
+            & .icon__arrows {
+                transition: all 0.7s ease 0s;
+                transform: rotate(180deg);
+            }
+            & .icon__mark {
+                transition: all 0.5s ease 0s;
+                visibility: visible;
+                transform: translateX(-50%) translateY(-50%) scale(1);
+            }
+        }
+    }
+
+    &__icon {
+    }
+
+    &__content {
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        margin: 0px 0px 6px 0px;
+    }
+
+    &__text {
+        line-height: 20px;
+    }
+}
+.icon {
+    &__container {
+        position: relative;
+    }
+
+    &__truck {
+    }
+
+    &__lines {
+        position: absolute;
+        left: 0;
+        top: 12px;
+    }
+
+    &__arrows {
+    }
+
+    &__24 {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    &__shield {
+    }
+
+    &__mark {
+        visibility: hidden;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%) scale(3);
+    }
+}
